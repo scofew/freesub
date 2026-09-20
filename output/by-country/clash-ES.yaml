@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
-  server: 5.188.181.201
-  port: 9025
+  server: 140.174.184.5
+  port: 8388
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: XPtzA9sCug3SPR4c
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
   server: 212.227.235.66
   port: 2053
@@ -24,20 +24,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  server: 108.181.121.226
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  server: 140.174.184.5
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
   server: es.cache-4d8a.com
   port: 443
   udp: true
@@ -49,6 +35,28 @@ proxies:
     short-id: 8319913f2e5f5711
   servername: es.cache-4d8a.com
   client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  server: 108.181.121.226
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  server: 194.26.100.73
+  port: 443
+  udp: true
+  type: vless
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
+  tls: true
+  reality-opts:
+    public-key: S6t9-gOX2mxWKNGvGSJ8NxDdlJy78d4gN2-wv2d0hFw
+    short-id: 8319913f2e5f5711
+  servername: es.cache-4d8a.com
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: grpc

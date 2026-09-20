@@ -39,7 +39,7 @@
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
-      "server": "179.43.162.252",
+      "server": "ch.cache-4d8a.com",
       "server_port": 443,
       "uuid": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
       "flow": "xtls-rprx-vision",
@@ -48,7 +48,7 @@
         "server_name": "ch.cache-4d8a.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -69,7 +69,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -81,6 +81,17 @@
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
+      "server": "131.123.34.145",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06 - xiaohe",
       "server": "151.242.2.81",
       "server_port": 443,
       "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
@@ -102,25 +113,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - xiaohe",
-      "server": "131.123.34.145",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 07 - xiaohe",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -130,8 +122,7 @@
         "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 06 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 07 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 06 - xiaohe"
       ]
     },
     {
@@ -143,8 +134,7 @@
         "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 06 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 07 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
