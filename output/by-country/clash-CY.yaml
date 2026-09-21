@@ -16,7 +16,7 @@ proxies:
     public-key: bPbAdn6ogLbiv5cRe5d12EL7FhooAIVrC3-fg90P-Bw
     short-id: 72104d27a0f5f62e
   servername: www.amazon.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe
   server: 194.76.154.31
   port: 40443
