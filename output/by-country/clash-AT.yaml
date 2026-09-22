@@ -25,49 +25,16 @@ proxies:
   servername: at.quattro-tech.ru
   client-fingerprint: qq
 - name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
-  server: 212.183.88.136
+  server: austria-dedic1.failspace.top
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: austria-dedic1.failspace.top
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇦🇹 奥地利 (Austria) 04 - xiaohe
-  server: 212.183.88.136
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇹 奥地利 (Austria) 05 - xiaohe
-  server: 212.183.88.136
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇦🇹 奥地利 (Austria) 06 - xiaohe
-  server: 212.183.88.136
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,9 +43,6 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
   - 🇦🇹 奥地利 (Austria) 03 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 04 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 05 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,8 +51,5 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01 - xiaohe
   - 🇦🇹 奥地利 (Austria) 02 - xiaohe
   - 🇦🇹 奥地利 (Austria) 03 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 04 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 05 - xiaohe
-  - 🇦🇹 奥地利 (Austria) 06 - xiaohe
 rules:
 - MATCH,PROXIES
