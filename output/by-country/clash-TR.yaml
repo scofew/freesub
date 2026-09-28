@@ -5,11 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 93.190.9.35
+  server: 93.190.9.52
   port: 3090
   udp: true
   type: vless
-  uuid: b55a33d7-83ee-416a-971e-eaaa0c928043
+  uuid: 52e8bce3-b255-486d-beb2-aa1b549c44b1
   network: grpc
   grpc-opts:
     grpc-service-name: vless
@@ -25,7 +25,7 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 151.241.226.201
   port: 2053
@@ -37,7 +37,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   server: me17.msjia8844.site
   port: 7443
