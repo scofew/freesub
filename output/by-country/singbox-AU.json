@@ -15,7 +15,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,26 +25,35 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
+      "server": "194.195.123.60",
+      "server_port": 22368,
+      "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JJsjBS60tj6uZp-x2tMJ_ioblXRcru_apACEkMJYnBM",
+          "short_id": "b5a3"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
       "server": "vpn-au-001.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
         "server_name": "vpn-au-001.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-      "server": "172.105.169.70",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "tls": {
-        "enabled": true,
-        "server_name": "172.105.169.70",
         "insecure": true
       }
     },
@@ -60,7 +69,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -86,27 +95,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - xiaohe",
-      "server": "194.195.123.60",
-      "server_port": 22368,
-      "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "JJsjBS60tj6uZp-x2tMJ_ioblXRcru_apACEkMJYnBM",
-          "short_id": "b5a3"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -115,8 +103,7 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe"
       ]
     },
     {
@@ -127,8 +114,7 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 06 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
