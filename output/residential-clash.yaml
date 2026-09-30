@@ -5,24 +5,59 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  server: f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  sni: f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 02 (移动家宽) - xiaohe
+  server: 104.21.78.225
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4ce7cb8a-f9b1-4bfa-a80d-9e168c61a633
+  tls: true
+  servername: curly-night-6928.ggdhchjk.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: curly-night-6928.ggdhchjk.workers.dev
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
   server: hk01.kfc-520.com
   port: 60001
   udp: true
   type: hysteria2
-  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
+  password: 5ec96249-b753-317a-b065-b67ad66b8185
   sni: hk01.kfc-520.com
   skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  - 🇺🇸 美国 (United States) 02 (移动家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaohe
 rules:
 - MATCH,PROXIES
