@@ -13,8 +13,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaohe
   server: cloud.ghostdev.lk
   port: 80
@@ -24,8 +22,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: m.zoom.us
 proxy-groups:
 - name: PROXIES
   type: select
