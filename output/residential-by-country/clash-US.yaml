@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 107.181.151.39
-  port: 443
+  server: 69.63.221.116
+  port: 25517
   udp: true
   type: vless
-  uuid: 13aef2e0-b3fb-4322-a0e9-c10b908ce6b5
-  flow: xtls-rprx-vision
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
   tls: true
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 87f895f23064
-  servername: www.techradar.com
-  client-fingerprint: firefox
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HBRETS1lYDldeEEFRGxhbVloPHhpEVl9AFwxSGQ9bSQ==
+    headers:
+      Host: wzs.echo.net.eu.org
 proxy-groups:
 - name: PROXIES
   type: select
